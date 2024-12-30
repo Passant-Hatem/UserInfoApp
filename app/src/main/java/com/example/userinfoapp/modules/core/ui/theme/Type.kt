@@ -1,4 +1,4 @@
-package com.example.userinfoapp.ui.theme
+package com.example.userinfoapp.modules.core.ui.theme
 
 import androidx.compose.material3.Typography
 import androidx.compose.ui.text.TextStyle

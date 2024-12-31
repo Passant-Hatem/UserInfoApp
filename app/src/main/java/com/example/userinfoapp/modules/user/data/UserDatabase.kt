@@ -2,11 +2,11 @@ package com.example.userinfoapp.modules.user.data
 
 import androidx.room.Database
 import androidx.room.RoomDatabase
-import com.example.userinfoapp.modules.user.domain.model.User
+import com.example.userinfoapp.modules.user.data.model.UserEntity
 
 
 @Database(
-    entities = [User::class],
+    entities = [UserEntity::class],
     version = 1
 )
 abstract class UserDatabase : RoomDatabase(){

@@ -1,4 +1,4 @@
-package com.example.userinfoapp.modules.user.presentaion.create_user_profile
+package com.example.userinfoapp.modules.user.user_profile.presentation
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -12,11 +12,13 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.ComposeView
 import androidx.fragment.app.Fragment
-import androidx.navigation.fragment.findNavController
+import androidx.fragment.app.viewModels
+import androidx.navigation.findNavController
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
-class CreateUserProfileFragment : Fragment() {
+class UserProfileFragment : Fragment() {
+    private val viewModel: UserProfileViewModel by viewModels()
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
@@ -24,23 +26,16 @@ class CreateUserProfileFragment : Fragment() {
     ): View {
         return ComposeView(requireContext()).apply {
             setContent {
+                val state = viewModel.state.value
                 Box(Modifier.fillMaxSize()){
                     Button(
-                        onClick = { onNavigateToUserProfile(9L) },
+                        onClick = { findNavController().popBackStack() },
                         modifier = Modifier.align(Alignment.Center)
                     ) {
-                        Text(text = "onNavigate")
+                        Text(text = "onNavigateBack, id: ${state.id}")
                     }
                 }
             }
         }
-    }
-
-    private fun onNavigateToUserProfile(id: Long) {
-        findNavController().navigate(
-            CreateUserProfileFragmentDirections.actionCreateUserProfileFragmentToUserProfileFragment(
-                id
-            )
-        )
     }
 }

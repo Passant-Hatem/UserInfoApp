@@ -1,6 +1,5 @@
 package com.example.userinfoapp.modules.user.domain
 
-import com.example.userinfoapp.modules.user.domain.model.User
 import javax.inject.Inject
 
 class GetUserData @Inject constructor(

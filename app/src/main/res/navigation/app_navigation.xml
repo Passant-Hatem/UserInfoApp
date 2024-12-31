@@ -6,7 +6,7 @@
 
     <fragment
         android:id="@+id/createUserProfileFragment"
-        android:name="com.example.userinfoapp.modules.user.presentaion.create_user_profile.CreateUserProfileFragment"
+        android:name="com.example.userinfoapp.modules.user.create_user_profile.presentation.CreateUserProfileFragment"
         android:label="CreateUserProfileFragment" >
         <action
             android:id="@+id/action_createUserProfileFragment_to_userProfileFragment"
@@ -14,7 +14,7 @@
     </fragment>
     <fragment
         android:id="@+id/userProfileFragment"
-        android:name="com.example.userinfoapp.modules.user.presentaion.user_profile.UserProfileFragment"
+        android:name="com.example.userinfoapp.modules.user.user_profile.presentation.UserProfileFragment"
         android:label="UserProfileFragment" >
         <argument
             android:name="id"

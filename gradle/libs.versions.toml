@@ -1,5 +1,6 @@
 [versions]
 agp = "8.4.2"
+appcompat = "1.6.1"
 hiltAndroid = "2.51.1"
 hiltNavigationFragment = "1.0.0"
 kotlin = "1.9.0"
@@ -14,8 +15,12 @@ dagger-hilt = "2.51.1"
 roomCompiler = "2.5.2"
 roomKtx = "2.5.2"
 roomRuntime = "2.5.2"
+constraintlayout = "2.2.0"
+navigationUiKtx = "2.8.5"
+safeargs = "2.7.3"
 
 [libraries]
+androidx-appcompat = { module = "androidx.appcompat:appcompat", version.ref = "appcompat" }
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
 androidx-hilt-navigation-fragment = { module = "androidx.hilt:hilt-navigation-fragment", version.ref = "hiltNavigationFragment" }
 androidx-room-ktx = { module = "androidx.room:room-ktx", version.ref = "roomKtx" }
@@ -36,9 +41,12 @@ androidx-ui-test-manifest = { group = "androidx.compose.ui", name = "ui-test-man
 androidx-ui-test-junit4 = { group = "androidx.compose.ui", name = "ui-test-junit4" }
 androidx-material3 = { group = "androidx.compose.material3", name = "material3" }
 room-compiler = { module = "androidx.room:room-compiler", version.ref = "roomCompiler" }
+androidx-constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" }
+androidx-navigation-ui-ktx = { group = "androidx.navigation", name = "navigation-ui-ktx", version.ref = "navigationUiKtx" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
 jetbrains-kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
 dagger-hilt-android = {id = "com.google.dagger.hilt.android", version.ref = "dagger-hilt"}
 kotlin-kapt = {id = "org.jetbrains.kotlin.kapt", version.ref = "kotlin"}
+safe-args = {id = "androidx.navigation.safeargs.kotlin", version.ref = "safeargs"}

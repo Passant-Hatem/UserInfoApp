@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/app_navigation"
+    app:startDestination="@id/createUserProfileFragment">
+
+    <fragment
+        android:id="@+id/createUserProfileFragment"
+        android:name="com.example.userinfoapp.modules.user.presentaion.create_user_profile.CreateUserProfileFragment"
+        android:label="CreateUserProfileFragment" >
+        <action
+            android:id="@+id/action_createUserProfileFragment_to_userProfileFragment"
+            app:destination="@id/userProfileFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/userProfileFragment"
+        android:name="com.example.userinfoapp.modules.user.presentaion.user_profile.UserProfileFragment"
+        android:label="UserProfileFragment" >
+        <argument
+            android:name="id"
+            app:argType="long" />
+    </fragment>
+</navigation>

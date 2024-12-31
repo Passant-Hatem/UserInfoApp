@@ -71,7 +71,7 @@ class CreateUserProfileViewModel @Inject constructor(
             )
         }.catch {
             _state.value = _state.value.copy(
-                errorMsg = R.string.save_user_error_message,
+                errorMsg = R.string.general_error_message,
                 saveUserDataAction = ActionStates.ERROR
             )
         }.launchIn(viewModelScope)

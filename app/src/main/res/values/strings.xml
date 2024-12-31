@@ -9,6 +9,13 @@
     <string name="text_error_message">Only letters, spaces, and hyphens are allowed</string>
     <string name="age_error_message">Age must be between 21 and 80</string>
     <string name="show_profile">Show My Profile</string>
-    <string name="save_user_error_message">Something went Wrong, please try again</string>
+    <string name="general_error_message">Something went Wrong, please try again</string>
     <string name="form_title">User Form</string>
+    <string name="retry_label">Retry</string>
+    <string name="user_data_title">User Data</string>
+    <string name="navigate_back">Navigate back</string>
+    <string name="lablel_name">Name</string>
+    <string name="lablel_age">Age</string>
+    <string name="lablel_gender">Gender</string>
+    <string name="lablel_job_title">Job Title</string>
 </resources>

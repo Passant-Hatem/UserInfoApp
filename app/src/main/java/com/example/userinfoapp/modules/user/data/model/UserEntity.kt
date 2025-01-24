@@ -18,6 +18,12 @@ data class UserEntity (
     val age: Int,
     @ColumnInfo(name = "jobTitle")
     val jobTitle: String,
+    @ColumnInfo(name = "nickname", defaultValue = "")
+    val nickname: String = "",
+    @ColumnInfo(name = "address", defaultValue = "")
+    val address: String = "",
+    @ColumnInfo(name = "maritalStatus", defaultValue = "Single")
+    val maritalStatus: String = "Single"
 )
 
 fun UserEntity.toDomain() = User(name, gender, age, jobTitle)

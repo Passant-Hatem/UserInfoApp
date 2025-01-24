@@ -19,6 +19,6 @@ object AppModule {
             application,
             UserDatabase::class.java,
             UserDatabase.DATABASE_NAME
-        ).build()
+        ).addMigrations(UserDatabase.MIGRATION_1_2).build()
     }
 }

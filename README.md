@@ -64,7 +64,36 @@ The project is structured to promote separation of concerns and maintainability:
 
 2. **Second Screen:**
    - Fetches the saved user data using Flow and displays it dynamically.
+---
 
+## Development Notes
+
+### `database-v2-migration` Branch
+This branch demonstrates how to update the Room database schema to version 2, handle data migrations, and test the migration process. 
+
+#### Key Updates
+1. **Database Version Upgrade**:
+   - Upgraded the database to version 2 with schema changes.
+   - Included a migration script to ensure data integrity during the upgrade.
+
+2. **Migration Testing**:
+   - Added tests using `MigrationTestHelper` to verify the database migration.
+   - Demonstrates how to insert sample data, perform migration, and validate the resulting schema.
+
+#### Purpose
+- This branch is created solely to share a practical example of database migration and testing.
+- **Note**: This branch will not be merged into the main branch and is intended for learning and demonstration purposes.
+
+#### How to Use
+1. Switch to the branch:
+   ```bash
+   git checkout database-v2-migration
+   ```
+2. Review the migration code and test files.
+3. Run the tests to understand how migration and validation are implemented:
+   ```bash
+   ./gradlew connectedAndroidTest
+   ```
 ---
 
 ## License
